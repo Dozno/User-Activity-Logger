@@ -2,7 +2,7 @@
 Set objShell = CreateObject("WScript.Shell")
 
 ' Nastavení správného hesla
-correctPassword = "142536Dc2011*"
+correctPassword = " Here enter your own password"
 
 ' Výzva k zadání hesla
 userPassword = InputBox("Enter password for acces to file", "file lock")
@@ -10,7 +10,7 @@ userPassword = InputBox("Enter password for acces to file", "file lock")
 ' Kontrola zadaného hesla
 If userPassword = correctPassword Then
     ' Pokud je heslo správné, otevře soubor
-    objShell.Run "notepad.exe ""C:\Users\cicko\Desktop\cmd\log\log.txt"""
+    objShell.Run "notepad.exe "" Here enter your directory """
 Else
     ' Pokud je heslo nesprávné, zobrazí chybovou zprávu
     MsgBox "Wrong password! acces denied", vbCritical, "Error"
